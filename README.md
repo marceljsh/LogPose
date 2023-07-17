@@ -7,7 +7,7 @@ Initially, `Log Pose` is a compass-like tool from One Piece that helps us to exp
 <br />
 
 ## `Tech Stacks🔧`
-[Next.js](https://nextjs.org/), [Tailwind](https://tailwindcss.com/)
+[Next.js](https://nextjs.org/), [React.js](https://react.dev) [Tailwind](https://tailwindcss.com/), [PostCSS](https://postcss.org/)
 
 <br />
 
@@ -27,6 +27,6 @@ npm run dev
 <br />
 
 ## `License📜`
-Copyright © 2023, [Marcel Joshua](github.com/marceljsh).
+Copyright © 2023, [Marcel Joshua](https://github.com/marceljsh).
 ***
 _This property is intended as a self exploration requirement_
