@@ -15,7 +15,9 @@ const CountryList = () => {
   useEffect(() => {
     const fetchCountries = async () => {
       const response = await fetch("https://restcountries.com/v3.1/all");
-      const c = await response.json();
+      const c: ICountry[] = (await response.json()).sort(
+        (a: ICountry, b: ICountry) => a.name.common.localeCompare(b.name.common)
+      );
 
       setCountries(c);
       setFilteredCountries(c);
@@ -26,9 +28,13 @@ const CountryList = () => {
 
   useEffect(() => {
     setFilteredCountries(() => {
-      return countries.filter((c) => {
-        return c.name.common.toLowerCase().includes(search.toLocaleLowerCase());
-      });
+      return countries
+        .filter((c) => {
+          return c.name.common
+            .toLowerCase()
+            .includes(search.toLocaleLowerCase());
+        })
+        .sort((a, b) => a.name.common.localeCompare(b.name.common));
     });
     setCurrentPage(1);
   }, [search]);
