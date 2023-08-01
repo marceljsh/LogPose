@@ -51,15 +51,15 @@ This is an example of how to list things you need to use the software and how to
 ### Installation
 
 1. Clone the repo
-   ```sh
+   ```bash
    git clone https://github.com/marceljsh/LogPose.git
    ```
 2. Install NPM packages
-   ```sh
+   ```bash
    npm install
    ```
 2. Run the application
-   ```sh
+   ```bash
    npm run dev
    ```
 
